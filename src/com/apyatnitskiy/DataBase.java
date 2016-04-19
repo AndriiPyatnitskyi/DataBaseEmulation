@@ -21,10 +21,8 @@ public class DataBase {
         return resultUser;
     }
 
-    public void printAll() {
-        for (User user : userList) {
-            System.out.println(user.toString());
-        }
+    public List<User> getAll() {
+        return userList;
     }
 
     public void init(User... users) {
